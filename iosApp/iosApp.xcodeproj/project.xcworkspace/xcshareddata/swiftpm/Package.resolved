@@ -1,0 +1,15 @@
+{
+  "originHash" : "4554d340dbc170991b0feb13625fc3922762dbbe624058982c33c6cd1f45c2be",
+  "pins" : [
+    {
+      "identity" : "sdk-ios",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/viafoura/sdk-ios",
+      "state" : {
+        "revision" : "dbbcc2add9cd861c181c2e414f7238b2ec3e414c",
+        "version" : "1.1.15"
+      }
+    }
+  ],
+  "version" : 3
+}
