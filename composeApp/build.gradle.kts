@@ -8,10 +8,13 @@ plugins {
     alias(libs.plugins.androidApplication)
     alias(libs.plugins.composeMultiplatform)
     alias(libs.plugins.composeCompiler)
-    kotlin("native.cocoapods") version "2.0.21"
 }
 
 kotlin {
+    iosX64()  // For macOS/iOS 64-bit targets
+    iosArm64() // For arm-based iOS devices
+    iosSimulatorArm64()
+
     androidTarget {
         @OptIn(ExperimentalKotlinGradlePluginApi::class)
         compilerOptions {
@@ -19,41 +22,6 @@ kotlin {
         }
     }
 
-
-    cocoapods {
-        version = "1.0"
-        summary = "Viafoura Demo Cocoapods"
-        ios.deploymentTarget = "13.0"
-
-        // Optional properties
-        // Configure the Pod name here instead of changing the Gradle project name
-        name = "MyCocoaPod"
-
-        framework {
-            // Required properties
-            // Framework name configuration. Use this property instead of deprecated 'frameworkName'
-            baseName = "MyFramework"
-
-            // Optional properties
-            // Specify the framework linking type. It's dynamic by default.
-            isStatic = false
-            // Dependency export
-            // Uncomment and specify another project module if you have one:
-            // export(project(":<your other KMP module>"))
-            transitiveExport = false // This is default.
-        }
-
-
-        cocoapods {
-            pod("ViafouraCore") {
-                moduleName = "ViafouraSDK"
-            }
-        }
-
-        // Maps custom Xcode configuration to NativeBuildType
-        xcodeConfigurationToNativeBuildType["CUSTOM_DEBUG"] = NativeBuildType.DEBUG
-        xcodeConfigurationToNativeBuildType["CUSTOM_RELEASE"] = NativeBuildType.RELEASE
-    }
 
     listOf(
         iosX64(),
@@ -65,10 +33,8 @@ kotlin {
             isStatic = true
         }
 
-        iosTarget.compilations.getByName("main") {
-            cinterops.all {
-                compilerOpts("-fmodules")  // Add -fmodules to this specific cinterop
-            }
+        iosTarget.compilations["main"].cinterops {
+
         }
     }
     
