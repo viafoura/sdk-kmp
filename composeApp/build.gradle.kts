@@ -32,10 +32,6 @@ kotlin {
             baseName = "ComposeApp"
             isStatic = true
         }
-
-        iosTarget.compilations["main"].cinterops {
-
-        }
     }
     
     sourceSets {

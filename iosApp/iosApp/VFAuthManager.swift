@@ -14,7 +14,7 @@ public class VFAuthManager: NSObject {
     let auth = ViafouraSDK.auth()
     
     @objc
-    func getLoggedInStatus(token: String, completion: @escaping (Bool) -> Void){
+    public func getLoggedInStatus(token: String, completion: @escaping (Bool) -> Void){
         auth.getUserLoginStatus(completion: { result in
             switch result {
             case .success(let loginStatus):
@@ -31,7 +31,7 @@ public class VFAuthManager: NSObject {
     
     
     @objc
-    func cookieLogin(token: String, completion: @escaping (Bool) -> Void){
+    public func cookieLogin(token: String, completion: @escaping (Bool) -> Void){
         auth.cookieLogin(token: token, completion: { result in
             switch result {
             case .success(let data):
@@ -43,7 +43,7 @@ public class VFAuthManager: NSObject {
     }
     
     @objc
-    func login(email: String, password: String, completion: @escaping (Bool) -> Void){
+    public func login(email: String, password: String, completion: @escaping (Bool) -> Void){
         auth.login(email: email, password: password, completion: { result in
             switch result {
             case .success(let data):
@@ -55,7 +55,7 @@ public class VFAuthManager: NSObject {
     }
     
     @objc
-    func logout(){
+    public func logout(){
         auth.logout()
     }
 }
