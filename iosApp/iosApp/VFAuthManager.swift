@@ -14,7 +14,7 @@ public class VFAuthManager: NSObject {
     let auth = ViafouraSDK.auth()
     
     @objc
-    public func getLoggedInStatus(completion: @escaping (Bool) -> Void){
+    public func getLoggedInStatus(_ completion: @escaping (Bool) -> Void) {
         auth.getUserLoginStatus(completion: { result in
             switch result {
             case .success(let loginStatus):

@@ -8,23 +8,19 @@
 
 /* Begin PBXBuildFile section */
 		058557BB273AAA24004C7B11 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 058557BA273AAA24004C7B11 /* Assets.xcassets */; };
-		058557D9273AAEEB004C7B11 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 058557D8273AAEEB004C7B11 /* Preview Assets.xcassets */; };
 		2152FB042600AC8F00CF470E /* iOSApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2152FB032600AC8F00CF470E /* iOSApp.swift */; };
 		47CB943C2CEB8677004ED12B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47CB943B2CEB8675004ED12B /* AppDelegate.swift */; };
-		47D627B62CEFBC82003ADDF9 /* VFAuthManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47D627B52CEFBC7E003ADDF9 /* VFAuthManager.swift */; };
 		47D627BA2CEFC284003ADDF9 /* ViafouraCore in Frameworks */ = {isa = PBXBuildFile; productRef = 47D627B92CEFC284003ADDF9 /* ViafouraCore */; };
-		47D627DC2CEFCC8A003ADDF9 /* VFAuthManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47D627DA2CEFCC8A003ADDF9 /* VFAuthManager.swift */; };
+		47D627FB2CF0C678003ADDF9 /* VFAuthManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47D627F92CF0C678003ADDF9 /* VFAuthManager.swift */; };
 		7555FF83242A565900829871 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7555FF82242A565900829871 /* ContentView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		058557BA273AAA24004C7B11 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		058557D8273AAEEB004C7B11 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		2152FB032600AC8F00CF470E /* iOSApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iOSApp.swift; sourceTree = "<group>"; };
 		47CB943B2CEB8675004ED12B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		47D627B52CEFBC7E003ADDF9 /* VFAuthManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VFAuthManager.swift; sourceTree = "<group>"; };
-		47D627DA2CEFCC8A003ADDF9 /* VFAuthManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VFAuthManager.swift; sourceTree = "<group>"; };
-		47D627DB2CEFCC8A003ADDF9 /* VFAuthManager-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "VFAuthManager-Bridging-Header.h"; sourceTree = "<group>"; };
+		47D627F92CF0C678003ADDF9 /* VFAuthManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VFAuthManager.swift; sourceTree = "<group>"; };
+		47EE8DBE2CF2C13B00D37A96 /* iosApp-Swift.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "iosApp-Swift.h"; sourceTree = "<group>"; };
 		7555FF7B242A565900829871 /* Viafoura Demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Viafoura Demo.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		7555FF82242A565900829871 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		7555FF8C242A565B00829871 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -43,14 +39,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		058557D7273AAEEB004C7B11 /* Preview Content */ = {
-			isa = PBXGroup;
-			children = (
-				058557D8273AAEEB004C7B11 /* Preview Assets.xcassets */,
-			);
-			path = "Preview Content";
-			sourceTree = "<group>";
-		};
 		42799AB246E5F90AF97AA0EF /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -79,15 +67,13 @@
 		7555FF7D242A565900829871 /* iosApp */ = {
 			isa = PBXGroup;
 			children = (
-				47D627DA2CEFCC8A003ADDF9 /* VFAuthManager.swift */,
-				47D627DB2CEFCC8A003ADDF9 /* VFAuthManager-Bridging-Header.h */,
-				47D627B52CEFBC7E003ADDF9 /* VFAuthManager.swift */,
+				47EE8DBE2CF2C13B00D37A96 /* iosApp-Swift.h */,
+				47D627F92CF0C678003ADDF9 /* VFAuthManager.swift */,
 				47CB943B2CEB8675004ED12B /* AppDelegate.swift */,
 				058557BA273AAA24004C7B11 /* Assets.xcassets */,
 				7555FF82242A565900829871 /* ContentView.swift */,
 				7555FF8C242A565B00829871 /* Info.plist */,
 				2152FB032600AC8F00CF470E /* iOSApp.swift */,
-				058557D7273AAEEB004C7B11 /* Preview Content */,
 			);
 			path = iosApp;
 			sourceTree = "<group>";
@@ -166,7 +152,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				058557D9273AAEEB004C7B11 /* Preview Assets.xcassets in Resources */,
 				058557BB273AAA24004C7B11 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -201,9 +186,8 @@
 			files = (
 				47CB943C2CEB8677004ED12B /* AppDelegate.swift in Sources */,
 				2152FB042600AC8F00CF470E /* iOSApp.swift in Sources */,
-				47D627DC2CEFCC8A003ADDF9 /* VFAuthManager.swift in Sources */,
 				7555FF83242A565900829871 /* ContentView.swift in Sources */,
-				47D627B62CEFBC82003ADDF9 /* VFAuthManager.swift in Sources */,
+				47D627FB2CF0C678003ADDF9 /* VFAuthManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -337,7 +321,6 @@
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
-				DEVELOPMENT_ASSET_PATHS = "\"iosApp/Preview Content\"";
 				DEVELOPMENT_TEAM = "${TEAM_ID}";
 				ENABLE_PREVIEWS = YES;
 				FRAMEWORK_SEARCH_PATHS = (
@@ -354,7 +337,6 @@
 				PRODUCT_MODULE_NAME = iosApp;
 				PRODUCT_NAME = "${APP_NAME}";
 				PROVISIONING_PROFILE_SPECIFIER = "";
-				SWIFT_OBJC_BRIDGING_HEADER = "iosApp/VFAuthManager-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -367,7 +349,6 @@
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
-				DEVELOPMENT_ASSET_PATHS = "\"iosApp/Preview Content\"";
 				DEVELOPMENT_TEAM = "${TEAM_ID}";
 				ENABLE_PREVIEWS = YES;
 				FRAMEWORK_SEARCH_PATHS = (
@@ -384,7 +365,6 @@
 				PRODUCT_MODULE_NAME = iosApp;
 				PRODUCT_NAME = "${APP_NAME}";
 				PROVISIONING_PROFILE_SPECIFIER = "";
-				SWIFT_OBJC_BRIDGING_HEADER = "iosApp/VFAuthManager-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
