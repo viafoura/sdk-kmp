@@ -32,6 +32,7 @@ kotlin {
                 cinterops {
                     create("ViafouraBridge") {
                         definitionFile.set(project.file("src/nativeInterop/cinterop/ViafouraSDK.def"))
+                        headers("../iosApp/iosApp/iosApp-Swift.h")
                     }
                 }
             }
