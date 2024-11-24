@@ -22,12 +22,21 @@ kotlin {
         }
     }
 
-
     listOf(
         iosX64(),
         iosArm64(),
         iosSimulatorArm64()
     ).forEach { iosTarget ->
+        iosTarget.compilations {
+            val main by getting {
+                cinterops {
+                    create("ViafouraBridge") {
+                        definitionFile.set(project.file("src/nativeInterop/cinterop/ViafouraSDK.def"))
+                    }
+                }
+            }
+        }
+
         iosTarget.binaries.framework {
             baseName = "ComposeApp"
             isStatic = true

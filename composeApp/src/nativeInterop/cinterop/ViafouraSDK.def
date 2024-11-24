@@ -1,1 +1,3 @@
-headers = iosApp/VFAuthManager/VFAuthManager-Swift.h
+language = Objective-C
+headers = /Users/martindesimone/Desktop/Viafoura/sdk-kotlin-mpp/iosApp/iosApp/iosApp-Swift.h
+package = viafouraBridge
